@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+
+    <header class="py-6 text-center">
+        <h1 class="text-3xl font-bold tracking-wider text-indigo-400">Creative Image Gallery</h1>
+        <p class="text-slate-400 text-sm mt-1">CodeAlpha Internship Task 1</p>
+    </header>
+
+    <main class="container mx-auto px-4 flex-grow pb-12">
+        
+        <div class="flex flex-wrap justify-center gap-3 mb-8" id="filter-buttons">
+            <button data-category="all" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-indigo-600 text-white transition-all shadow-md">All</button>
+            <button data-category="nature" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Nature</button>
+            <button data-category="architecture" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Architecture</button>
+            <button data-category="technology" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Technology</button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+        </div>
+    </main>
+
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-indigo-400 transition-colors">&times;</button>
+        <button id="prev-btn" class="absolute left-4 md:left-8 text-white bg-slate-800/60 hover:bg-slate-700 p-3 rounded-full text-xl transition-all">&#10094;</button>
+        
+        <div class="max-w-4xl max-h-[80vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Lightbox Image" class="max-h-[70vh] object-contain rounded-lg shadow-2xl">
+            <p id="lightbox-caption" class="mt-4 text-slate-300 text-lg font-medium"></p>
+        </div>
+
+        <button id="next-btn" class="absolute right-4 md:right-8 text-white bg-slate-800/60 hover:bg-slate-700 p-3 rounded-full text-xl transition-all">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
