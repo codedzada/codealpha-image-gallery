@@ -3,7 +3,7 @@
 A responsive and interactive **Image Gallery** web application built as part of the CodeAlpha frontend internship task. It features category filtering, a smooth lightbox viewer with image navigation, and modern UI design using Tailwind CSS.
 
 ## 🔗 Live Demo
-👉 [View Live Demo](https://YOUR_USERNAME.github.io/codealpha-image-gallery/)
+👉 https://codedzada.github.io/codealpha-image-gallery/
 
 ## 🚀 Features
 
